@@ -16,6 +16,7 @@ PPCA方法
 
 
 使用示例：
+```
 # 导入imputer，然后实例化对象
 import numpy as np
 import pandas as pd
@@ -75,7 +76,7 @@ pos8 = np.where((dense_mat != 0) & (binary_mat8 == 0))
 knn_mape2 = mape(dense_mat[pos2],knn_res2[pos2])
 knn_mape4 = mape(dense_mat[pos4],knn_res4[pos4])
 knn_mape6 = mape(dense_mat[pos6],knn_res6[pos6])
-knn_mape8 = mape(dense_mat[pos8],knn_res8[pos8])
+knn_mape8 = mape(dense_mat[pos8],knn_res8[pos8])```
 
 # 结果展示。
 print("knn mape ,missing rate\n20% {}\n40% {}\n60% {}\n80% {}".format(knn_mape2,knn_mape4,knn_mape6,knn_mape8))
@@ -84,5 +85,4 @@ print("knn mape ,missing rate\n20% {}\n40% {}\n60% {}\n80% {}".format(knn_mape2,
 # 40% 9.362702031879724
 # 60% 10.360443113147243
 # 80% 12.368586561731675
-
-
+```
