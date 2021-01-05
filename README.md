@@ -4,17 +4,17 @@
 knn方法
 knn方法通过两个步骤来补全丢失数据，1、选择。从数据集中选择k个与目标向量最接近的向量，测量模式相似性的方法有欧几里得距离Euclidean distance (Ed)和皮尔森相关性Pearson correlation (Pc)。2、补全。补全缺失值通过以下公式进行，有点类似于k个向量中对应值的加权平均。
 
-<div align=center>![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F1.png)
+![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F1.png)
 
 BNs方法
 该方法在已知t时刻前m个值的情况下计算t时刻的期望。
 
-<div align=center>![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F%E4%BA%8C.png)
+![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F%E4%BA%8C.png)
 
 PPCA方法
 该方法假设假设所有的样本点都取样于某个分布 x ∈ ，对于每个点都有一个 与之对应，取样于某个分布 z ∈ ，满足以下条件
 
-<div align=center>![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F%E4%B8%89.png)
+![img](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%85%AC%E5%BC%8F%E4%B8%89.png)
 
 使用示例：
 ```
