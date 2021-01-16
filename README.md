@@ -24,11 +24,13 @@ knn方法通过两个步骤来补全丢失数据，1、选择。从数据集中�
 ### 2.2.4BGCP
 是一种以贝叶斯推断 (Bayesian inference) 、高斯假设为基础的张量分解技术。
 高斯假设下的张量模型：
-![photo]()
+![photo](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%9B%BE%E7%89%871.png)
 
 模型参数的先验分布：
+![photo](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%9B%BE%E7%89%872.png)
 
 超参数的先验分布：
+![photo](https://github.com/sequelOoO/imputation-baselines/blob/main/img/%E5%9B%BE%E7%89%873.png)
 
 其中，上面出现的向量如在没有特殊说明的情况下，都表示列向量； α 和 β 也是模型的超参数。
 对于模型参数，例如  ，它的似然来自于观测值  ，先验是一个多元正态分布，因此，  的后验分布仍然是一个多元正态分布，即  ，后验的参数如下：
