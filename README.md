@@ -139,3 +139,5 @@ print("knn mape ,missing rate\n20% {}\n40% {}\n60% {}\n80% {}".format(knn_mape2,
 
 ```
 
+其中矩阵分解方法主要参考
+https://github.com/xinychen/transdim
